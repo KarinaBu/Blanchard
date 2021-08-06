@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BLANCHARD</title>
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/choices.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+
+
+
+</head>
+
+<body class="body">
+
+	<header class="roof">
+		<div class="roof__container">
+			<div class="container container--flex">
+
+				<a href="" class="roof__logo">
+					<picture>
+						<source srcset="img/header/logo320.png" media="(max-width:320px)">
+						<source srcset="img/header/logo1024.svg" media="(max-width:1024px)">
+						<img src="img/header/logo.svg" alt="Логотип">
+					</picture>
+				</a>
+
+
+				<button aria-label="раскрыть меню" id="burger" class="btn roof__burger">
+					<svg width="36" height="29" viewbox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.699997)" fill="white" />
+						<path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white" />
+						<path d="M24 25.0478H0V28.7H24V25.0478Z" fill="white" />
+					</svg>
+				</button>
+
+				<div class="roof__search-tablet">
+					<button aria-label="поиск" class="btn roof__lupa" id="lupa">
+						<svg width="30" height="29" viewbox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="9.15446" height="2.28862"
+								transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M16.1246 24.174C10.0376 24.174 5.32763 19.2725 5.32763 13.5104C5.32763 7.74821 10.0376 2.84674 16.1246 2.84674C22.2115 2.84674 26.9215 7.74821 26.9215 13.5104C26.9215 19.2725 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14867 8.76285 0.180832 16.1246 0.180832C23.4863 0.180832 29.4541 6.14867 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+								fill="white" />
+						</svg>
+					</button>
+					<div class="roof__search-input" id="input">
+						<input id="search" type="search" placeholder="Поиск по сайту">
+						<button class="btn roof__close-lupa" id="#close-lupa">
+							<svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="2.63623" width="37.2838" height="3.72838" transform="rotate(45 2.63623 0)" fill="white" />
+								<rect y="26.3636" width="37.2838" height="3.72838" transform="rotate(-45 0 26.3636)" fill="white" />
+							</svg></button></div>
+				</div>
+
+				<nav class="roof__nav" id="menu">
+					<button class="btn roof__close-tablet" id="#close">
+						<svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="2.63623" width="37.2838" height="3.72838" transform="rotate(45 2.63623 0)" fill="white" />
+							<rect y="26.3636" width="37.2838" height="3.72838" transform="rotate(-45 0 26.3636)" fill="white" />
+						</svg>
+					</button>
+					<ul class="roof__nav-list">
+						<li class="roof__nav-item"><a class="roof__nav-item-link" href="#about-us">О нас</a></li>
+						<li class="roof__nav-item"><a class="roof__nav-item-link" href="#gallery">Галерея</a></li>
+						<li class="roof__nav-item"><a class="roof__nav-item-link" href="#catalog">Каталог</a></li>
+						<li class="roof__nav-item"><a class="roof__nav-item-link" href="#event">События</a></li>
+						<li class="roof__nav-item"><a class="roof__nav-item-link" href="#edition">Издания</a></li>
+						<li class="roof__nav-item"><a class="roof__nav-item-link" href="#project">Проекты</a></li>
+						<li class="roof__nav-item"><a class="roof__nav-item-link" href="#contacts">Контакты</a></li>
+					</ul>
+					<button class="btn roof__lk roof__lk-tablet">
+						<svg class="roof__lk-img" width="13" height="13" viewbox="0 0 13 13" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+								fill="white" />
+						</svg>
+						Войти</button>
+				</nav>
+
+				<button class="btn roof__lk roof__lk-desktop">
+					<svg class="roof__lk-img" width="13" height="13" viewbox="0 0 13 13" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+							fill="white" />
+					</svg>
+					Войти</button>
+			</div>
+		</div>
+
+		<div class="roof__down">
+			<div class="container container--flex">
+
+				<nav class="roof__down-nav">
+					<ul class="roof__down-list">
+						<li class="roof__down-item"><button class="btn roof__down-link">Реализм
+								<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class="roof__down-item-svg" d="M11 5L6 10L0.999997 5" stroke="white" />
+								</svg>
+								<svg class="roof__down-item-svg-active" width="12" height="11" viewbox="0 0 12 11" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.999997 6L6 0.999995L11 6" stroke="#7943A4" />
+								</svg>
+							</button>
+							<div class="roof__nav-wrapper">
+								<div class="roof__nav-wrapper-container">
+									<ul class="roof__nav-list-falls" id="myDropdown">
+										<li class="roof__nav-item-falls dropdown-realism-one"><a class="roof__down-item-link"
+												href="#">Тинторетто</a></li>
+										<li class="roof__nav-item-falls dropdown-realism-two"><a class="roof__down-item-link"
+												href="#">Фридрих</a></li>
+										<li class="roof__nav-item-falls dropdown-realism-three"><a class="roof__down-item-link"
+												href="#">Леонардо</a></li>
+										<li class="roof__nav-item-falls dropdown-realism-four"><a class="roof__down-item-link"
+												href="#">Веррокью</a></li>
+										<li class="roof__nav-item-falls dropdown-realism-one"><a class="roof__down-item-link"
+												href="#">Тинторетто</a></li>
+										<li class="roof__nav-item-falls dropdown-realism-two"><a class="roof__down-item-link"
+												href="#">Фридрих</a></li>
+										<li class="roof__nav-item-falls dropdown-realism-three"><a class="roof__down-item-link"
+												href="#">Леонардо</a></li>
+										<li class="roof__nav-item-falls dropdown-realism-four"><a class="roof__down-item-link"
+												href="#">Веррокью</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="roof__down-item"><button class="btn roof__down-link">Импрессионизм
+								<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class="roof__down-item-svg" d="M11 5L6 10L0.999997 5" stroke="white" />
+								</svg>
+								<svg class="roof__down-item-svg-active" width="12" height="11" viewbox="0 0 12 11" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.999997 6L6 0.999995L11 6" stroke="#7943A4" />
+								</svg>
+							</button>
+							<div class="roof__nav-wrapper">
+								<div class="roof__nav-wrapper-container">
+									<ul class="roof__nav-list-falls">
+										<li class="roof__nav-item-falls dropdown-impressionism-one"><a class="roof__down-item-link"
+												href="#">Моне</a></li>
+										<li class="roof__nav-item-falls dropdown-impressionism-two"><a class="roof__down-item-link"
+												href="#">Сислей</a></li>
+										<li class="roof__nav-item-falls dropdown-impressionism-three"><a class="roof__down-item-link"
+												href="#">Мане</a></li>
+										<li class="roof__nav-item-falls dropdown-impressionism-four"><a class="roof__down-item-link"
+												href="#">Ренуар</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="roof__down-item"><button class="btn roof__down-link">Постимпрессионизм
+								<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class="roof__down-item-svg" d="M11 5L6 10L0.999997 5" stroke="white" />
+								</svg>
+								<svg class="roof__down-item-svg-active" width="12" height="11" viewbox="0 0 12 11" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.999997 6L6 0.999995L11 6" stroke="#7943A4" />
+								</svg>
+							</button>
+							<div class="roof__nav-wrapper">
+								<div class="roof__nav-wrapper-container">
+									<ul class="roof__nav-list-falls">
+										<li class="roof__nav-item-falls dropdown-post-one"><a class="roof__down-item-link" href="#">Ван
+												Гог</a></li>
+										<li class="roof__nav-item-falls dropdown-post-two"><a class="roof__down-item-link"
+												href="#">Сезанн</a></li>
+										<li class="roof__nav-item-falls dropdown-post-three"><a class="roof__down-item-link"
+												href="#">Гоген</a></li>
+										<li class="roof__nav-item-falls dropdown-post-four"><a class="roof__down-item-link"
+												href="#">Сёра</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="roof__down-item"><button class="btn roof__down-link">Авангард
+								<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class="roof__down-item-svg" d="M11 5L6 10L0.999997 5" stroke="white" />
+								</svg>
+								<svg class="roof__down-item-svg-active" width="12" height="11" viewbox="0 0 12 11" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.999997 6L6 0.999995L11 6" stroke="#7943A4" />
+								</svg>
+							</button>
+							<div class="roof__nav-wrapper">
+								<div class="roof__nav-wrapper-container">
+									<ul class="roof__nav-list-falls">
+										<li class="roof__nav-item-falls dropdown-avangard-one"><a class="roof__down-item-link"
+												href="#">Кандинский</a></li>
+										<li class="roof__nav-item-falls dropdown-avangard-two"><a class="roof__down-item-link"
+												href="#">Маринетти</a></li>
+										<li class="roof__nav-item-falls dropdown-avangard-three"><a class="roof__down-item-link"
+												href="#">Малевич</a></li>
+										<li class="roof__nav-item-falls dropdown-avangard-four"><a class="roof__down-item-link"
+												href="#">Пикассо</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="roof__down-item"><button class="btn roof__down-link"> Футуризм
+								<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class="roof__down-item-svg" d="M11 5L6 10L0.999997 5" stroke="white" />
+								</svg>
+								<svg class="roof__down-item-svg-active" width="12" height="11" viewbox="0 0 12 11" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.999997 6L6 0.999995L11 6" stroke="#7943A4" />
+								</svg>
+							</button>
+							<div class="roof__nav-wrapper">
+								<div class="roof__nav-wrapper-container">
+									<ul class="roof__nav-list-falls">
+										<li class="roof__nav-item-falls dropdown-futurism-one"><a class="roof__down-item-link"
+												href="#">Карра</a></li>
+										<li class="roof__nav-item-falls dropdown-futurism-two"><a class="roof__down-item-link"
+												href="#">Прателла</a></li>
+										<li class="roof__nav-item-falls dropdown-futurism-three"><a class="roof__down-item-link"
+												href="#">Северини</a></li>
+										<li class="roof__nav-item-falls dropdown-futurism-four"><a class="roof__down-item-link"
+												href="#">Балла</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<form aria-label="Поиск по сайту" class="roof__search">
+					<button class="roof__search-btn"></button>
+					<input class="roof__search-input" type="search" placeholder="Поиск по сайту">
+				</form>
+			</div>
+		</div>
+
+	</header>
+
+	<main>
+
+		<section class="hero">
+			<div class="container container--flex">
+				<div class="hero__text">
+					<h2 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
+					<p class="hero-description">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных
+						плановых заданий создаёт предпосылки для новых предложений.</p>
+
+					<button class="btn hero__btn">Подписаться на рассылку</button>
+
+				</div>
+			</div>
+			<div class="swiper-container">
+
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="section-hero__background">
+
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="section-hero__background-2">
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="section-hero__background-3">
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="about-us">
+			<div class="container">
+				<h2 class="level-2 about-us__title" id="about-us">О нас</h2>
+				<p class="about-us__description">Ясность нашей позиции очевидна: семантический разбор
+					внешних противодействий однозначно определяет каждого участника как способного
+					принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов.
+					Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет
+					за собой процесс внедрения и модернизации модели развития. Повседневная практика
+					показывает, что высокое качество позиционных исследований создаёт необходимость
+					включения в производственный план целого ряда внеочередных мероприятий с учётом
+					комплекса распределения внутренних резервов и ресурсов. В рамках спецификации
+					современных стандартов, действия представителей оппозиции набирают популярность среди
+					определенных слоев населения, а значит, должны быть разоблачены.</p>
+			</div>
+		</section>
+
+
+		<section class="gallery" id="gallery">
+			<div class="container container--flex gallery__container">
+
+				<div class="gallery-left">
+					<h2 class="level-2 gallery__title">Галерея</h2>
+					<p class="gallery__name">Фильтровать по:</p>
+					<p class="gallery__name-mobile">Фильтр:</p>
+					<div class="gallery__select">
+						<select name="select" class="select">
+							<option value="">Автор</option>
+							<option value="" data-select-text>Направление</option>
+							<option value="">Техника</option>
+						</select>
+					</div>
+
+					<p class="gallery__note">
+						Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
+						скачиваний <a href="" class="gallery__link">авторизуйтесь</a>, либо воспользуйтесь лицензией.
+					</p>
+				</div>
+
+
+				<div class="gallery-right">
+
+					<div class="gallery__pageinfo">
+						<button class="btn gallery__slick-prev">
+							<svg width="11" height="12" viewbox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6 11L0.999995 6L6 0.999998" stroke="white" />
+							</svg>
+						</button>
+						<div class="pagination"></div>
+						<button class="btn gallery__slick-next">
+							<svg width="7" height="12" viewbox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 11L6 6L1 0.999998" stroke="white" />
+							</svg>
+						</button>
+					</div>
+
+
+					<div class="gallery__slider-container" id="gallery-section">
+						<div class="gallery__swiper-wrapper">
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob1.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/1/card1.webp" alt="Картина№1">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob2.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/1/card2.webp" alt="Картина№2">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob3.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/1/card3.webp" alt="Картина№3">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob4.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/1/card4.webp" alt="Картина№4">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob5.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/1/card5.webp" alt="Картина№5">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob6.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/1/card6.webp" alt="Картина№6">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob7.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/2/card1.webp" alt="Картина№7">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob8.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/2/card2.webp" alt="Картина№8">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob9.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/2/card3.webp" alt="Картина№9">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob10.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/2/card4.webp" alt="Картина№10">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob11.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/2/card5.webp" alt="Картина№11">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob12.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/2/card6.webp" alt="Картина№12">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob13.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/card1.webp" alt="Картина№13">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob14.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/card2.webp" alt="Картина№14">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob15.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/card3.webp" alt="Картина№15">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob16.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/card4.webp" alt="Картина№16">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob17.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/card5.webp" alt="Картина№17">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob18.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/card6.webp" alt="Картина№18">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob19.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/4/card1.webp" alt="Картина№19">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob20.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/4/card2.webp" alt="Картина№20">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob21.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/4/card3.webp" alt="Картина№21">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob22.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/4/card4.webp" alt="Картина№22">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob23.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/4/card5.webp" alt="Картина№23">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob24.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/4/card6.webp" alt="Картина№24">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob25.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/5/card1.webp" alt="Картина№25">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob26.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/5/card2.webp" alt="Картина№26">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob27.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/5/card3.webp" alt="Картина№27">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob28.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/5/card4.webp" alt="Картина№28">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob29.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/5/card5.webp" alt="Картина№29">
+										</picture>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__slide">
+								<a href="#modal" class="gallery__modal-link">
+									<div class="gallery__modal-content">
+										<picture>
+											<source srcset="img/gallery/mobile/gal-mob30.webp" media="(max-width:320px)">
+											<img class="gallery__img" src="img/gallery/5/card6.webp" alt="Картина№30">
+										</picture>
+									</div>
+								</a>
+							</div>
+						</div>
+
+
+
+					</div>
+					<p class="gallery__note--mobile">
+						Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
+						скачиваний <a href="" class="gallery__link">авторизуйтесь</a>, либо воспользуйтесь лицензией.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="catalog" id="catalog">
+			<div class="container">
+				<div class="catalog__tabs-flag">
+					<h2 class="level-2 catalog__title">Каталог</h2>
+					<nav class="catalog__nav">
+						<ul class="catalog__nav-list">
+							<li class="catalog__nav-item">
+								<button class="btn catalog__nav-item-btn" data-path="france">
+									<img class="catalog__flag" src="img/catalog/image1.png" alt="флаг Франции"></button>
+							</li>
+							<li class="catalog__nav-item">
+								<button class="btn catalog__nav-item-btn" data-path="germany">
+									<img class="catalog__flag" src="img/catalog/image2.png" alt="флаг Германии"></button>
+							</li>
+							<li class="catalog__nav-item">
+								<button class="btn catalog__nav-item-btn catalog__nav-item-btn-active" data-path="italy">
+									<img class="catalog__flag" src="img/catalog/image3.png" alt="флаг Италии"></button>
+							</li>
+							<li class="catalog__nav-item">
+								<button class="btn catalog__nav-item-btn" data-path="rus">
+									<img class="catalog__flag" src="img/catalog/image4.png" alt="флаг России"></button>
+							</li>
+							<li class="catalog__nav-item">
+								<button class="btn catalog__nav-item-btn" data-path="belgium">
+									<img class="catalog__flag" src="img/catalog/image5.png" alt="флаг Бельгии"></button>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<p class="catalog__description" data-target="france">
+					О&nbsp;кельтской живописи нам ровно ничего неизвестно, а&nbsp;от&nbsp;галльско-римского периода
+					во&nbsp;Франции дошли до&nbsp;нас только кое-какие фрагменты мозаик. Равным образом
+					и&nbsp;от&nbsp;живописи времен франкийской монархии не&nbsp;сохранилось ничего, кроме миниатюр
+					в&nbsp;тогдашних рукописях. Вообще, из&nbsp;всех отраслей искусства средневековой Франции,
+					живопись&nbsp;&mdash; самая бедная количеством сохранившихся памятников. </p>
+
+				<p class="catalog__description" data-target="germany">
+					Истоки искусства Германии берут своё начало в&nbsp;глубокой древности, когда германские племена
+					пришли на&nbsp;земли Римской империи в&nbsp;эпоху крушения античного способа производства </p>
+
+				<p class="catalog__description catalog__description-active" data-target="italy">
+					Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского
+					типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали.
+					Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+					нанотехнологии и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть функционально
+					разнесены на&nbsp;независимые элементы.
+				</p>
+
+				<p class="catalog__description" data-target="rus">
+					Русские мастера, как правило, становились художниками, пройдя через мастерские Канцелярии
+					от&nbsp;строений (Вишняков, Антропов и&nbsp;другие). Этих мастеров загружали декоративными работами,
+					однако они находили время и&nbsp;для создания портретов. &laquo;Их&nbsp;представление о&nbsp;натуре
+					заметно окрашено традиционностью&raquo; </p>
+
+				<p class="catalog__description" data-target="belgium">
+					Для общей истории фламандской живописи XVII столетия имеют значение, кроме сборников литературных
+					источников Ван Мандера, Гоубракена, де&nbsp;Би, Ван Гооля и&nbsp;Вейермана, лексиконы Иммерзееля,
+					Крамма и&nbsp;Вурцбаха, сводные, лишь отчасти устаревшие, книги Михиельса, Ваагена, Вотерса, Ригеля
+					и&nbsp;Филиппи. </p>
+
+				<div class="catalog__left-right">
+
+					<div class="catalog__left catalog__left-active" data-biography="girlandaio">
+						<picture>
+							<source srcset="img/catalog/left768.webp" media="(max-width:1000px)">
+							<source srcset="img/catalog/img1024.webp" media="(max-width:1024px)">
+							<img class="catalog__img" src="img/catalog/left.webp" alt="Портрет Доменико Гирландайо">
+						</picture>
+						<p class="catalog__left-strong">Доменико Гирландайо</p>
+						<small class="catalog__left-small">2 июня 1448 — 11 января 1494.</small>
+						<p class="catalog__left-description">
+							Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель
+							художественной династии, которую продолжили его брат Давид и&nbsp;сын
+							Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+							течение года овладевал профессиональными навыками. Автор фресковых
+							циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными подробностями показана
+							домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные
+							граждане Флоренции в&nbsp;костюмах того времени).</p>
+					</div>
+
+					<div class="catalog__left" data-biography="ambrojo">
+						<img class="catalog__img" src="img/catalog/random.webp" alt="Бергоньоне, Амброджо">
+
+						<p class="catalog__left-strong">Бергоньоне, Амброджо</p>
+						<small class="catalog__left-small">2 июня 1448 — 11 января 1494.</small>
+						<p class="catalog__left-description">
+							Амброджо Бергоньоне или Боргоньоне, настоящее имя&nbsp;&mdash; Амброджо да&nbsp;Фоссано
+							(итал. Ambrogio Bergognone, Ambrogio da&nbsp;Fossano, 1453, Фоссано, провинция
+							Кунео&nbsp;&mdash; 1523, Милан)&nbsp;&mdash; итальянский художник ломбардской школы.</p>
+					</div>
+
+					<div class="catalog__right">
+						<ul class="catalog__list" id="accordion">
+							<li class="catalog__item">
+								<h3 class="catalog__item-name">
+									<button class="btn catalog__period-btn">
+										<span class="catalog__period-year">C 1400 по 1499 гг.</span>
+										<svg class="catalog__period-arrow" width="50" height="50" viewbox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+										</svg>
+									</button>
+								</h3>
+								<div class="catalog__item-description">
+									<ul class="catalog__list-col">
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Бенедетто ди Биндо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бергоньоне,
+												Амброджо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Биссоло,
+												Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Больтраффио, Джованни</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Бонсиньори, Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Боттичини,
+												Рафаэлло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Брамантино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бреа,
+												Людовико</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Бьяджо
+												д’Антонио Туччи</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Веккьетта</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Андреа
+												Верроккьо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col btn catalog__btn-col-active"
+												data-artist="ambrojo">Доменико Гирландайо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Беноццо
+												Гоццоли</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Граначчи,
+												Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Грегорио
+												ди Чекко</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Джованни да
+												Удине</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Джованни
+												ди Паоло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Джорджоне</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Парентино, Бернардо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Пезеллино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Пьетро
+												Перуджино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Перуцци,
+												Бальдассаре</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Пизанелло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Пинтуриккьо</button></li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="catalog__item">
+								<h3 class="catalog__item-name">
+									<button class="btn catalog__period-btn">
+										<span class="catalog__period-year">C 1500 по 1599 гг.</span>
+										<svg class="catalog__period-arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+										</svg>
+									</button>
+								</h3>
+								<div class="catalog__item-description">
+									<ul class="catalog__list-col">
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Бенедетто ди Биндо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бергоньоне,
+												Амброджо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Биссоло,
+												Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Больтраффио, Джованни</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Бонсиньори, Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Боттичини,
+												Рафаэлло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Брамантино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бреа,
+												Людовико</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Бьяджо
+												д’Антонио Туччи</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Веккьетта</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Андреа
+												Верроккьо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Доменико
+												Гирландайо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Беноццо
+												Гоццоли</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Граначчи,
+												Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Грегорио
+												ди Чекко</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Джованни да
+												Удине</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Джованни
+												ди Паоло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Джорджоне</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Парентино, Бернардо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Пезеллино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Пьетро
+												Перуджино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Перуцци,
+												Бальдассаре</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Пизанелло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Пинтуриккьо</button></li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="catalog__item">
+								<h3 class="catalog__item-name">
+									<button class="btn catalog__period-btn">
+										<span class="catalog__period-year">C 1600 по 1699 гг.</span>
+										<svg class="catalog__period-arrow" width="50" height="50" viewbox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+										</svg>
+									</button>
+								</h3>
+								<div class="catalog__item-description">
+									<ul class="catalog__list-col">
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Бенедетто ди Биндо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бергоньоне,
+												Амброджо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Биссоло,
+												Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Больтраффио, Джованни</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Бонсиньори, Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Боттичини,
+												Рафаэлло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Брамантино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бреа,
+												Людовико</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Бьяджо
+												д’Антонио Туччи</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Веккьетта</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Андреа
+												Верроккьо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Доменико
+												Гирландайо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Беноццо
+												Гоццоли</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Граначчи,
+												Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Грегорио
+												ди Чекко</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Джованни да
+												Удине</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Джованни
+												ди Паоло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Джорджоне</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Парентино, Бернардо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Пезеллино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Пьетро
+												Перуджино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Перуцци,
+												Бальдассаре</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Пизанелло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Пинтуриккьо</button></li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="catalog__item">
+								<h3 class="catalog__item-name">
+									<button class="btn catalog__period-btn">
+										<span class="catalog__period-year">C 1700 по 1799 гг.</span>
+										<svg class="catalog__period-arrow" width="50" height="50" viewbox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+										</svg>
+									</button>
+								</h3>
+								<div class="catalog__item-description">
+									<ul class="catalog__list-col">
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Бенедетто ди Биндо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бергоньоне,
+												Амброджо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Биссоло,
+												Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Больтраффио, Джованни</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Бонсиньори, Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Боттичини,
+												Рафаэлло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Брамантино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бреа,
+												Людовико</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Бьяджо
+												д’Антонио Туччи</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Веккьетта</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Андреа
+												Верроккьо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Доменико
+												Гирландайо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Беноццо
+												Гоццоли</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Граначчи, Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Грегорио ди
+												Чекко</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Джованни
+												да Удине</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Джованни ди
+												Паоло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Джорджоне</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Парентино,
+												Бернардо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Пезеллино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Пьетро
+												Перуджино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Перуцци,
+												Бальдассаре</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Пизанелло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Пинтуриккьо</button></li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="catalog__item">
+								<h3 class="catalog__item-name">
+									<button class="btn catalog__period-btn">
+										<span class="catalog__period-year">C 1800 по 1899 гг.</span>
+										<svg class="catalog__period-arrow" width="50" height="50" viewbox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+										</svg>
+									</button>
+								</h3>
+								<div class="catalog__item-description">
+									<ul class="catalog__list-col">
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Бенедетто ди Биндо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бергоньоне,
+												Амброджо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Биссоло,
+												Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Больтраффио, Джованни</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Бонсиньори, Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Боттичини,
+												Рафаэлло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Брамантино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Бреа,
+												Людовико</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бьяджо
+												д’Антонио Туччи</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Веккьетта</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Андреа
+												Верроккьо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Доменико
+												Гирландайо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Беноццо
+												Гоццоли</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Граначчи, Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Грегорио ди
+												Чекко</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Джованни
+												да Удине</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Джованни ди
+												Паоло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Джорджоне</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Парентино,
+												Бернардо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Пезеллино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Пьетро
+												Перуджино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Перуцци,
+												Бальдассаре</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Пизанелло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Пинтуриккьо</button></li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="catalog__item">
+								<h3 class="catalog__item-name">
+									<button class="btn catalog__period-btn">
+										<span class="catalog__period-year">C 1900 по 1999 гг.</span>
+										<svg class="catalog__period-arrow" width="50" height="50" viewbox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+										</svg>
+									</button>
+								</h3>
+								<div class="catalog__item-description">
+									<ul class="catalog__list-col">
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бенедетто
+												ди Биндо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Бергоньоне, Амброджо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Биссоло,
+												Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Больтраффио, Джованни</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бонсиньори,
+												Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Боттичини, Рафаэлло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Брамантино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Бреа,
+												Людовико</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бьяджо
+												д’Антонио Туччи</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Веккьетта</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Андреа
+												Верроккьо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Доменико
+												Гирландайо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Беноццо
+												Гоццоли</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Граначчи, Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Грегорио ди
+												Чекко</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Джованни
+												да Удине</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Джованни ди
+												Паоло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Джорджоне</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Парентино,
+												Бернардо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Пезеллино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Пьетро
+												Перуджино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Перуцци,
+												Бальдассаре</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Пизанелло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Пинтуриккьо</button></li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="catalog__item">
+								<h3 class="catalog__item-name">
+									<button class="btn catalog__period-btn">
+										<span class="catalog__period-year">C 2000 г.</span>
+										<svg class="catalog__period-arrow" width="50" height="50" viewbox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+										</svg>
+									</button>
+								</h3>
+								<div class="catalog__item-description">
+									<ul class="catalog__list-col">
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Бенедетто ди Биндо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бергоньоне,
+												Амброджо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Биссоло,
+												Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Больтраффио, Джованни</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бонсиньори,
+												Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Боттичини, Рафаэлло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Брамантино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Бреа,
+												Людовико</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Бьяджо
+												д’Антонио Туччи</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Веккьетта</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Андреа
+												Верроккьо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Доменико
+												Гирландайо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Беноццо
+												Гоццоли</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Граначчи, Франческо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Грегорио ди
+												Чекко</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Джованни
+												да Удине</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Джованни ди
+												Паоло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Джорджоне</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Парентино, Бернардо</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Пезеллино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="girlandaio">Пьетро
+												Перуджино</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col" data-artist="ambrojo">Перуцци,
+												Бальдассаре</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="girlandaio">Пизанелло</button></li>
+										<li class="catalog__item-col"><button class="btn catalog__btn-col"
+												data-artist="ambrojo">Пинтуриккьо</button></li>
+									</ul>
+								</div>
+							</li>
+
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="event" id="event">
+			<div class="container">
+				<h2 class="level-2 event__title">События</h2>
+				<ul class="event__card">
+					<li class="event__card-item">
+						<img class="event__card-img" src="img/event/event1.webp" alt="Музей им. Щусева">
+						<small class="event__card-small">
+							<span class="event__card-small-content">Музей им. Щусева</span>
+							<span class="event__card-small-content">с 20 марта по 30 апреля</span>
+						</small>
+						<div class="event__card-content">
+							<strong class="event__card-strong">Книжная гравюра в живом восприятии</strong>
+							<p class="event__card-description">
+								Один из ведущих флорентийских художников Кватроченто,
+								основатель художественной династии, которую продолжили его брат Давид
+								и сын Ридольфо.
+							</p>
+							<a href="" class="event__card-link">Подробнее</a>
+						</div>
+					</li>
+
+					<li class="event__card-item">
+						<img class="event__card-img" src="img/event/event2.webp" alt="ММОМА">
+						<small class="event__card-small">
+							<span class="event__card-small-content">ММОМА</span>
+							<span class="event__card-small-content">24 марта 19:00</span>
+						</small>
+						<div class="event__card-content">
+							<strong class="event__card-strong">«Открытая дискуссия». Дмитрий Петров и Сергей
+								Ильин.</strong>
+							<p class="event__card-description">
+								Высокий уровень вовлечения представителей целевой аудитории
+								является четким доказательством простого факта.
+							</p>
+							<a href="" class="event__card-link">Подробнее</a>
+						</div>
+					</li>
+
+					<li class="event__card-item">
+						<img class="event__card-img" src="img/event/event3.webp" alt="Еврейский музей">
+						<small class="event__card-small">
+							<span class="event__card-small-content">Еврейский музей</span>
+							<span class="event__card-small-content">с 31 марта по 21 апреля</span>
+						</small>
+						<div class="event__card-content">
+							<strong class="event__card-strong">Выставка «Формация 2020»</strong>
+							<p class="event__card-description">
+								Идейные соображения высшего порядка, а также современная методология
+								разработки играет важную роль в формировании глубокомысленных рассуждений.
+							</p>
+							<a href="" class="event__card-link">Подробнее</a>
+						</div>
+					</li>
+
+
+					<li class="event__card-item">
+						<img class="event__card-img" src="img/event/event4.webp" alt="Третьяковка на Крымском валу">
+						<small class="event__card-small">
+							<span class="event__card-small-content">Третьяковка на Крымском валу</span>
+							<span class="event__card-small-content">с 30 марта по 30 апреля</span>
+						</small>
+						<div class="event__card-content">
+							<strong class="event__card-strong">XXIV Международная биеннале молодого искусства</strong>
+							<p class="event__card-description">
+								Внезапно, реплицированные с зарубежных источников, современные исследования.
+							</p>
+							<a href="" class="event__card-link">Подробнее</a>
+						</div>
+					</li>
+
+
+					<li class="event__card-item">
+						<img class="event__card-img" src="img/event/event5.webp" alt="ММАМ">
+						<small class="event__card-small">
+							<span class="event__card-small-content">ММАМ</span>
+							<span class="event__card-small-content">с 8 апреля по 20 мая</span>
+						</small>
+						<div class="event__card-content">
+							<strong class="event__card-strong">Джон Винзор. Фотографии из серии «Метафора
+								серебра»</strong>
+							<p class="event__card-description">
+								Один из ведущих флорентийских художников Кватроченто, основатель
+								художественной династии, которую продолжили его брат Давид и сын Ридольфо.
+							</p>
+							<a href="" class="event__card-link">Подробнее</a>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+
+			<button class="btn event__btn">Все события</button>
+		</section>
+
+		<section class="edition" id="edition">
+			<div class="container container--flex edition__container">
+				<div class="edition__left">
+					<h2 class="level-2 edition__title">Издания</h2>
+					<h3 class="edition__checkbox-name">Категории</h3>
+
+					<ul class="edition__checkbox-list">
+
+						<li class="edition__checkbox-item">
+							<label>
+								<input type="checkbox" name="checkbox" class="edition__checkbox-custom">
+								<span class="check-style"></span>
+								<span class="check-text">Бестселлеры</span>
+							</label>
+						</li>
+
+						<li class="edition__checkbox-item">
+							<label>
+								<input type="checkbox" name="checkbox" class="edition__checkbox-custom">
+								<span class="check-style"></span>
+								<span class="check-text">Искусство</span>
+							</label>
+						</li>
+
+						<li class="edition__checkbox-item">
+							<label>
+								<input type="checkbox" name="checkbox" class="edition__checkbox-custom">
+								<span class="check-style"></span>
+								<span class="check-text">Архитектура</span>
+							</label>
+						</li>
+
+						<li class="edition__checkbox-item">
+							<label>
+								<input type="checkbox" name="checkbox" class="edition__checkbox-custom" checked>
+								<span class="check-style"></span>
+								<span class="check-text">Дизайн</span>
+							</label>
+						</li>
+
+						<li class="edition__checkbox-item">
+							<label>
+								<input type="checkbox" name="checkbox" class="edition__checkbox-custom">
+								<span class="check-style"></span>
+								<span class="check-text">Мода</span>
+							</label>
+						</li>
+
+						<li class="edition__checkbox-item">
+							<label>
+								<input type="checkbox" name="checkbox" class="edition__checkbox-custom">
+								<span class="check-style"></span>
+								<span class="check-text">Детям</span>
+							</label>
+						</li>
+
+						<li class="edition__checkbox-item">
+							<label>
+								<input type="checkbox" name="checkbox" class="edition__checkbox-custom">
+								<span class="check-style"></span>
+								<span class="check-text">Художественная литература</span>
+							</label>
+						</li>
+
+						<li class="edition__checkbox-item">
+							<label>
+								<input type="checkbox" name="checkbox" class="edition__checkbox-custom">
+								<span class="check-style"></span>
+								<span class="check-text">Публицистика</span>
+							</label>
+						</li>
+
+						<li class="edition__checkbox-item">
+							<label>
+								<input type="checkbox" name="checkbox" class="edition__checkbox-custom">
+								<span class="check-style"></span>
+								<span class="check-text">Путеводители</span>
+							</label>
+						</li>
+
+						<li class="edition__checkbox-item">
+							<label>
+								<input type="checkbox" name="checkbox" class="edition__checkbox-custom">
+								<span class="check-style"></span>
+								<span class="check-text">Философия</span>
+							</label>
+						</li>
+
+						<li class="edition__checkbox-item">
+							<label>
+								<input type="checkbox" name="checkbox" class="edition__checkbox-custom">
+								<span class="check-style"></span>
+								<span class="check-text">Учебная литература</span>
+							</label>
+						</li>
+
+						<li class="edition__checkbox-item">
+							<label>
+								<input type="checkbox" name="checkbox" class="edition__checkbox-custom">
+								<span class="check-style"></span>
+								<span class="check-text">Журналы и газеты</span>
+							</label>
+						</li>
+					</ul>
+
+					<h3 class="edition__form-name">Цена</h3>
+					<form class="edition__form">
+						<div class="">
+							<span class="edition__form-text">Oт</span>
+							<input class="edition__form-input" type="number" placeholder="50">
+							<span class="edition__form-text">До</span>
+							<input class="edition__form-input" type="number" placeholder="25000">
+							<span class="edition__form-text">руб.</span>
+						</div>
+					</form>
+				</div>
+
+				<div class="edition__right">
+
+					<div class="edition__pageinfo">
+						<button class="btn edition__slick-prev">
+							<svg width="11" height="12" viewbox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6 11L0.999995 6L6 0.999998" stroke="white" />
+							</svg>
+						</button>
+						<div class="edition__pagination"></div>
+						<button class="btn edition__slick-next">
+							<svg width="7" height="12" viewbox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 11L6 6L1 0.999998" stroke="white" />
+							</svg>
+						</button>
+					</div>
+
+					<div class="edition__slider">
+
+						<div class="edition__slide">
+							<div class="edition__card-item">
+								<img class="edition__card-img" src="img/edition/view1.webp" alt="Искусство цвета Иттен, Иоханнес">
+								<span class="edition__card-description">
+									Искусство цвета
+								</span>
+								<span class="edition__price">620 руб</span>
+								<small class="edition__card-small">Иттен, Иоханнес</small>
+								<button class="btn edition__btn">
+									Заказать
+								</button>
+							</div>
+						</div>
+
+
+						<div class="edition__slide">
+							<div class="edition__card-item">
+								<img class="edition__card-img" src="img/edition/view2.webp" alt="Типографика Рудер, Эмиль">
+								<span class="edition__card-description">
+									Типографика
+								</span>
+								<span class="edition__price">2 450 руб</span>
+								<small class="edition__card-small">Рудер, Эмиль</small>
+								<button class="btn edition__btn">
+									Заказать
+								</button>
+							</div>
+						</div>
+
+						<div class="edition__slide">
+							<div class="edition__card-item">
+								<img class="edition__card-img" src="img/edition/view3.webp" alt="Книга про буквы Гордон, Юрий">
+								<span class="edition__card-description">
+									Книга про буквы
+								</span>
+								<span class="edition__price">2 220 руб</span>
+								<small class="edition__card-small">Гордон, Юрий</small>
+								<button class="btn edition__btn">
+									Заказать
+								</button>
+							</div>
+						</div>
+
+						<div class="edition__slide">
+							<div class="edition__card-item">
+								<img class="edition__card-img" src="img/edition/none4.webp" alt="Николай Ильин Кричевский, Владимир">
+								<span class="edition__card-description">
+									Николай Ильин
+								</span>
+								<span class="edition__price">1 100 руб</span>
+								<small class="edition__card-small">Кричевский, Владимир</small>
+								<button class="btn edition__btn">
+									Заказать
+								</button>
+							</div>
+						</div>
+
+						<div class="edition__slide">
+							<div class="edition__card-item">
+								<img class="edition__card-img" src="img/edition/none5.webp"
+									alt="Модульные сетки в граф... Мюллер-Брокманн, Йозеф">
+								<span class="edition__card-description">
+									Модульные сетки в граф...
+								</span>
+								<span class="edition__price">1 450 руб</span>
+								<small class="edition__card-small">Мюллер-Брокманн, Йозеф</small>
+								<button class="btn edition__btn">
+									Заказать
+								</button>
+							</div>
+						</div>
+
+						<div class="edition__slide">
+							<div class="edition__card-item">
+								<img class="edition__card-img" src="img/edition/none6.webp"
+									alt="Эволюция графических ст... Хеллер, Чваст">
+								<span class="edition__card-description">
+									Эволюция графических ст...
+								</span>
+								<span class="edition__price">3 200 руб</span>
+								<small class="edition__card-small">Хеллер, Чваст</small>
+								<button class="btn edition__btn">
+									Заказать
+								</button>
+							</div>
+						</div>
+
+						<div class="edition__slide">
+							<div class="edition__card-item">
+								<img class="edition__card-img" src="img/edition/none7.webp"
+									alt="Искусство и визуальное в... Арнхейм, Рудольф ">
+								<span class="edition__card-description">
+									Искусство и визуальное в...
+								</span>
+								<span class="edition__price">2 200 руб</span>
+								<small class="edition__card-small">Арнхейм, Рудольф</small>
+								<button class="btn edition__btn">
+									Заказать
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="project" id="project">
+			<div class="container">
+				<h2 class="level-2 project__title">Проекты</h2>
+				<p class="project__description">
+					Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей
+					деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи.
+					А&nbsp;ещё независимые государства смешаны с&nbsp;не&nbsp;уникальными данными&nbsp;до степени
+					совершенной
+					неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное<br
+						class="line-break">
+					информационно-пропагандистское <button id="project__popup-one" class="btn project__popup-btn"></button>
+					обеспечение нашей деятельности
+					однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И&nbsp;нет
+					сомнений, что
+					действия представителей оппозиции могут быть рассмотрены <button id="project__popup-two"
+						class="btn project__popup-btn"></button>
+					исключительно в&nbsp;разрезе маркетинговых
+					и финансовых <button id="project__popup-three" class="btn project__popup-btn"></button>
+					предпосылок. Банальные, но&nbsp;неопровержимые выводы, а
+					также представители современных
+					социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть
+					смешаны с&nbsp;не
+					уникальными данными до&nbsp;степени совершенной неузнаваемости. Подробнее: <a
+						href="blanchard-art.ru/projects/about" class="project__link">blanchard-art.ru/projects/about</a>
+				</p>
+
+				<h3 class="project__slider-name">Партнёры проектов:</h3>
+
+
+				<div class="project__slider-wrapper">
+
+					<button class="btn project__slick-prev">
+						<svg width="11" height="12" viewbox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 11L0.999995 6L6 0.999998" stroke="white" />
+						</svg>
+					</button>
+					<button class="btn project__slick-next">
+						<svg width="7" height="12" viewbox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 11L6 6L1 0.999998" stroke="white" />
+						</svg>
+					</button>
+
+					<div class="project__slider">
+
+						<div class="project__slider-list">
+							<div class="project__slide">
+								<a class="project__slide-link"><img class="project__slide-img" src="img/project/prsmall1.webp"
+										alt=""></a>
+							</div>
+
+							<div class="project__slide">
+								<a class="project__slide-link"><img class="project__slide-img" src="img/project/prsmall2.webp"
+										alt=""></a>
+							</div>
+
+							<div class="project__slide">
+								<a class="project__slide-link"><img class="project__slide-img" src="img/project/prsmall3.webp"
+										alt=""></a>
+							</div>
+
+							<div class="project__slide">
+								<a class="project__slide-link"><img class="project__slide-img" src="img/project/prsmall4.webp"
+										alt=""></a>
+							</div>
+
+							<div class="project__slide">
+								<a class="project__slide-link"><img class="project__slide-img" src="img/project/prsmall5.webp"
+										alt=""></a>
+							</div>
+
+							<div class="project__slide">
+								<a class="project__slide-link"><img class="project__slide-img" src="img/project/prsmall6.webp"
+										alt=""></a>
+							</div>
+
+							<div class="project__slide">
+								<a class="project__slide-link"><img class="project__slide-img" src="img/project/prsmall7.webp"
+										alt=""></a>
+							</div>
+
+							<div class="project__slide">
+								<a class="project__slide-link"><img class="project__slide-img" src="img/project/prsmall8.webp"
+										alt=""></a>
+							</div>
+
+							<div class="project__slide">
+								<a class="project__slide-link"><img class="project__slide-img" src="img/project/prsmall9.webp"
+										alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="contacts">
+			<h2 class="level-2 contacts__title container" id="contacts">Контакты</h2>
+			<div class="contacts__container">
+
+				<div class="contacts__adress-mobile">
+					<strong class="contacts__strong">Шоурум №2</strong>
+					<small class="contacts__small">Леонтьевский переулок, дом 5/1</small>
+				</div>
+
+				<div class="contacts__left">
+
+					<div class="contacts__left-content">
+						<div class="contacts__adress">
+							<strong class="contacts__strong">Шоурум №4</strong>
+							<small class="contacts__small">Леонтьевский переулок, дом 5, строение 1</small>
+						</div>
+
+						<div class="contacts__adress-tablet">
+							<strong class="contacts__strong-tablet">Шоурум №2</strong>
+							<small class="contacts__small-tablet">Покровский бульвар, дом 24, строение 3</small>
+						</div>
+
+						<div class="contacts__form-name">Заказать обратный звонок</div>
+						<form class="contacts__form">
+							<label class="contacts__form-label">
+								<input class="contacts__input contacts__input-name" type="text" name="имя" placeholder="Имя*"
+									data-validate-field="name">
+							</label>
+							<label class="contacts__form-label">
+								<input class="contacts__input contacts__input-tel" type="tel" name="телефон" placeholder="Телефон*"
+									data-validate-field="tel" data-validate-rules="phone">
+							</label>
+							<button class="btn contacts__btn">Заказать</button>
+						</form>
+
+						<div class="contacts__social">
+							<p class="contacts__social-name">Связаться в один клик</p>
+							<ul class="contacts__social-list">
+
+								<li class="contacts__social-item">
+									<a href="https://web.whatsapp.com/" target="_blank">
+										<img class="contacts__social-item-img" src="img/contacts/whatsapp.svg" alt="Whatsapp">
+									</a>
+								</li>
+
+								<li class="contacts__social-item">
+									<a href="https://web.telegram.org/#/login" target="_blank">
+										<img class="contacts__social-item-img" src="img/contacts/telegram.svg" alt="Telegram">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="contacts__right">
+					<div class="contacts__map" id="map"></div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container container--flex footer__container">
+			<img class="footer__logo" src="img/footer/logo.svg" alt="Логотип сайта">
+			<ul class="footer__social-list">
+				<li class="footer__social-item">
+					<a class="footer__social-link" href="">
+						<img class="footer__social-link-img" src="img/footer/vk.svg" alt="Вконтакте">
+					</a>
+				</li>
+
+				<li class="footer__social-item">
+					<a class="footer__social-link" href="">
+						<img class="footer__social-link-img" src="img/footer/instagram.svg" alt="Instagram">
+					</a>
+				</li>
+
+				<li class="footer__social-item">
+					<a class="footer__social-link" href="">
+						<img class="footer__social-link-img" src="img/footer/fb.svg" alt="Facebook">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<div class="modal" id="modal">
+		<div class="modal-body">
+			<div class="modal-content">
+				<a href="#gallery-section" class="modal-close"></a>
+				<img class="modal-img" src="img/gallery/popup.webp" alt="Информация о картине">
+				<div class="modal-info">
+					<h3 class="modal-artist">Казимир Малевич</h3>
+					<h4 class="modal-name">“Женщина с граблями”</h4>
+					<span class="modal-years">1931-1932</span>
+					<p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся
+						за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской
+						выставок в 1927 году.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/just-validate.min.js" defer></script>
+	<script src="js/inputmask.min.js" defer></script>
+	<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js" defer></script>
+	<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
+	<script src="js/slick.min.js" defer></script>
+	<script src="js/choices.min.js" defer></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.js" defer></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js" defer></script>
+	<script src="js/blanchard.js" defer></script>
+
+</body>
+
+</html>
